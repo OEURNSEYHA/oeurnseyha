@@ -1,9 +1,28 @@
 import React, { useEffect, useState } from "react";
 import myPhoto from "../Image/image.png";
 import photo2 from "../Image/DSC_34133.jpg";
+import seyha1 from "../Image/photo_2025-02-22_14-31-23.jpg";
+import seyha2 from "../Image/image.png";
+import seyha3 from "../Image/photo_2025-02-22_14-31-33.jpg";
+import seyha4 from "../Image/66741013_631928217326582_7623439235252486144_n.jpg";
+import seyha5 from "../Image/79411289_547253426095640_128547709744316416_n.jpg";
+import seyha6 from "../Image/76204362_941334806241077_818115601154179072_n.jpg";
+import seyha7 from "../Image/271693373_606756010615978_2048877280588885239_n.jpg";
+import seyha8 from "../Image/66437537_383138912559477_8304022402971467776_n.jpg";
+
 import { isMobile } from "react-device-detect";
 import { motion } from "framer-motion";
 
+const myPhotos: string[] = [
+  seyha1,
+  seyha2,
+  seyha3,
+  seyha4,
+  seyha5,
+  seyha6,
+  seyha7,
+  seyha8,
+];
 const roles: string[] = ["Web Developer", "API Engineer", "QA Engineer"];
 const Home: React.FC = () => {
   const [currentText, setCurrentText] = useState("");
@@ -440,13 +459,13 @@ const Home: React.FC = () => {
           </div>
         </div>
       </section>
-
+      {/*  skill section */}
       <div
         className="mt-20 mb-5  w-[100%] xl:w-[1200px] m-auto font-heading"
         id="skill"
       >
         <div className="flex justify-center items-center">
-        <h2 className="text-4xl font-bold text-gray-800">My Skills</h2>
+          <h2 className="text-4xl font-bold text-gray-800">My Skills</h2>
         </div>
         <div className="2xl:w-[1400px] w-[100%] m-auto py-5 px-3">
           <div className="flex flex-col gap-2">
@@ -496,6 +515,9 @@ const Home: React.FC = () => {
                 EXPRESS JS
               </div>
               <div className=" uppercase border border-gray-300  bg-gray-400 focus:ring-4 rounded-full  px-5 py-2.5 mr-2 mb-2 text-white">
+                TSOA
+              </div>
+              <div className=" uppercase border border-gray-300  bg-gray-400 focus:ring-4 rounded-full  px-5 py-2.5 mr-2 mb-2 text-white">
                 JAVA
               </div>
               <div className=" uppercase border border-gray-300  bg-gray-400 focus:ring-4 rounded-full  px-5 py-2.5 mr-2 mb-2 text-white">
@@ -511,10 +533,30 @@ const Home: React.FC = () => {
                 AWS
               </div>
               <div className=" uppercase border border-gray-300  bg-gray-400 focus:ring-4 rounded-full  px-5 py-2.5 mr-2 mb-2 text-white">
-                CI/CD
+                S3
               </div>
               <div className=" uppercase border border-gray-300  bg-gray-400 focus:ring-4 rounded-full  px-5 py-2.5 mr-2 mb-2 text-white">
+                cognito
+              </div>
+              <div className=" uppercase border border-gray-300  bg-gray-400 focus:ring-4 rounded-full  px-5 py-2.5 mr-2 mb-2 text-white">
+                PM2
+              </div>
+              <div className=" uppercase border border-gray-300  bg-gray-400 focus:ring-4 rounded-full  px-5 py-2.5 mr-2 mb-2 text-white">
+                EC2
+              </div>
+
+              <div className=" uppercase border border-gray-300  bg-gray-400 focus:ring-4 rounded-full  px-5 py-2.5 mr-2 mb-2 text-white">
                 DOCKER
+              </div>
+              <div className=" uppercase border border-gray-300  bg-gray-400 focus:ring-4 rounded-full  px-5 py-2.5 mr-2 mb-2 text-white">
+                CI/CD
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col gap-2 mt-3">
+            <div className="flex flex-wrap">
+              <div className=" uppercase border border-gray-300  bg-gray-400 focus:ring-4 rounded-full  px-5 py-2.5 mr-2 mb-2 text-white">
+                Story Book
               </div>
               <div className=" uppercase border border-gray-300  bg-gray-400 focus:ring-4 rounded-full  px-5 py-2.5 mr-2 mb-2 text-white">
                 Karate Test
@@ -537,13 +579,6 @@ const Home: React.FC = () => {
               <div className="uppercase border border-gray-300  bg-gray-400 focus:ring-4 rounded-full  px-5 py-2.5 mr-2 mb-2 text-white">
                 ROBOT FRAMEWORK
               </div>
-            </div>
-          </div>
-          <div className="flex flex-col gap-2 mt-3">
-            <div className="flex flex-wrap">
-              <div className=" uppercase border border-gray-300  bg-gray-400 focus:ring-4 rounded-full  px-5 py-2.5 mr-2 mb-2 text-white">
-                Story Book
-              </div>
               <div className=" uppercase border border-gray-300  bg-gray-400 focus:ring-4 rounded-full  px-5 py-2.5 mr-2 mb-2 text-white">
                 Git
               </div>
@@ -563,6 +598,30 @@ const Home: React.FC = () => {
           </div>
         </div>
       </div>
+      <section className="bg-gray-100 py-12">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center">
+            <h2 className="text-4xl font-bold text-gray-800">
+              Collect of My Photo
+            </h2>
+            <p className="text-lg text-gray-600">
+              A showcase of my favorite photos 2019-2025
+            </p>
+          </div>
+
+          <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+            {myPhotos.map((items, id) => (
+              <div className="overflow-hidden rounded-lg shadow-lg" key={id}>
+                <img
+                  src={items}
+                  alt="Portfolio Photo 1"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </>
   );
 };
