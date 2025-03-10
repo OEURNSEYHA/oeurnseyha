@@ -185,7 +185,7 @@ const Home: React.FC = () => {
                   </a>
                 </p>
                 <p>
-                  <span className="font-semibold">Freelance:</span> Unavailable
+                  <span className="font-semibold">Freelance:</span> Available
                 </p>
               </div>
             </div>
