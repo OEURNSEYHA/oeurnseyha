@@ -1,28 +1,21 @@
 import React, { useEffect, useState } from "react";
 import myPhoto from "../Image/image.png";
 import photo2 from "../Image/DSC_34133.jpg";
-import seyha1 from "../Image/photo_2025-02-22_14-31-23.jpg";
-import seyha2 from "../Image/image.png";
-import seyha3 from "../Image/photo_2025-02-22_14-31-33.jpg";
-import seyha4 from "../Image/66741013_631928217326582_7623439235252486144_n.jpg";
-import seyha5 from "../Image/79411289_547253426095640_128547709744316416_n.jpg";
-import seyha6 from "../Image/76204362_941334806241077_818115601154179072_n.jpg";
-import seyha7 from "../Image/271693373_606756010615978_2048877280588885239_n.jpg";
-import seyha8 from "../Image/66437537_383138912559477_8304022402971467776_n.jpg";
+
 
 import { isMobile } from "react-device-detect";
 import { motion } from "framer-motion";
 
-const myPhotos: string[] = [
-  seyha1,
-  seyha2,
-  seyha3,
-  seyha4,
-  seyha5,
-  seyha6,
-  seyha7,
-  seyha8,
-];
+// const myPhotos: string[] = [
+//   seyha1,
+//   seyha2,
+//   seyha3,
+//   seyha4,
+//   seyha5,
+//   seyha6,
+//   seyha7,
+//   seyha8,
+// ];
 const roles: string[] = ["Web Developer", "API Engineer", "QA Engineer"];
 const Home: React.FC = () => {
   const [currentText, setCurrentText] = useState("");
@@ -598,7 +591,7 @@ const Home: React.FC = () => {
           </div>
         </div>
       </div>
-      <section className="bg-gray-100 py-12">
+      {/* <section className="bg-gray-100 py-12">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center">
             <h2 className="text-4xl font-bold text-gray-800">
@@ -621,7 +614,7 @@ const Home: React.FC = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };
