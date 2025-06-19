@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import myPhoto from "../Image/image.png";
 import photo2 from "../Image/DSC_34133.jpg";
 
-
 import { isMobile } from "react-device-detect";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 // const myPhotos: string[] = [
 //   seyha1,
@@ -445,6 +445,23 @@ const Home: React.FC = () => {
                   <li className=" text-left">
                     Additional Tools: Knowledge of Nodemailer for email services
                     and JSON Server for lightweight backend mock-ups.
+                  </li>
+                </ul>
+              </div>
+              <div className="relative pl-6 mb-6">
+                <span className="absolute text-left left-0 top-1.5 w-4 h-4 border-[2px] border-blue-600  rounded-full"></span>
+                <div className="h-full  w-[2px] bg-blue-600  absolute left-[7px] top-[22px]"></div>
+                <h4 className="font-bold text-gray-800 text-left">
+                  Blog & Knowledge Base
+                </h4>
+                <p className="text-gray-500 italic text-left">
+                  Devops,Observation,Monitoring
+                </p>
+                <ul className="mt-2 list-disc pl-4 text-green-600">
+                  <li className=" text-left">
+                    <Link to="/articles/server-monitoring-grafana">
+                      Monitor Server Metrics (RAM, CPU, Traffic) with Grafana
+                    </Link>
                   </li>
                 </ul>
               </div>
