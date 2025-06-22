@@ -463,6 +463,11 @@ const Home: React.FC = () => {
                       Monitor Server Metrics (RAM, CPU, Traffic) with Grafana
                     </Link>
                   </li>
+                  <li>
+                    <Link to="/articles/install-jenkin">
+                      How to install jenkin on server and add modern plugin
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
