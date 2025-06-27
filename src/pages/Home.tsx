@@ -589,6 +589,12 @@ const Home: React.FC = () => {
                 JMETER
               </div>
               <div className=" uppercase border border-gray-300  bg-gray-400 focus:ring-4 rounded-full  px-5 py-2.5 mr-2 mb-2 text-white">
+                K6
+              </div>
+              <div className=" uppercase border border-gray-300  bg-gray-400 focus:ring-4 rounded-full  px-5 py-2.5 mr-2 mb-2 text-white">
+                KATALON
+              </div>
+              <div className=" uppercase border border-gray-300  bg-gray-400 focus:ring-4 rounded-full  px-5 py-2.5 mr-2 mb-2 text-white">
                 Selenium
               </div>
               <div className="uppercase border border-gray-300  bg-gray-400 focus:ring-4 rounded-full  px-5 py-2.5 mr-2 mb-2 text-white">
