@@ -566,6 +566,18 @@ const Home: React.FC = () => {
               <div className=" uppercase border border-gray-300  bg-gray-400 focus:ring-4 rounded-full  px-5 py-2.5 mr-2 mb-2 text-white">
                 CI/CD
               </div>
+              <div className=" uppercase border border-gray-300  bg-gray-400 focus:ring-4 rounded-full  px-5 py-2.5 mr-2 mb-2 text-white">
+                JENKINS
+              </div>
+              <div className=" uppercase border border-gray-300  bg-gray-400 focus:ring-4 rounded-full  px-5 py-2.5 mr-2 mb-2 text-white">
+                K3s
+              </div>
+              <div className=" uppercase border border-gray-300  bg-gray-400 focus:ring-4 rounded-full  px-5 py-2.5 mr-2 mb-2 text-white">
+                OBSERVATION 
+              </div>
+              <div className=" uppercase border border-gray-300  bg-gray-400 focus:ring-4 rounded-full  px-5 py-2.5 mr-2 mb-2 text-white">
+                MONITORING
+              </div>
             </div>
           </div>
           <div className="flex flex-col gap-2 mt-3">
