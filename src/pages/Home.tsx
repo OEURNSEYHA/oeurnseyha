@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import myPhoto from "../Image/image.png";
 import photo2 from "../Image/DSC_34133.jpg";
-import pdf from "../Image/e5e78a1f-d4b8-4631-b53e-a3ec3ec26beb_K3s_Setup_and_Manage_Cluster.pdf";
+
 
 import { isMobile } from "react-device-detect";
 import { motion } from "framer-motion";
@@ -22,7 +22,6 @@ const Home: React.FC = () => {
   const [currentText, setCurrentText] = useState("");
   const [index, setIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const [showPdf, setShowPdf] = useState(false);
   useEffect(() => {
     const fullText = roles[index];
     let timer: ReturnType<typeof setTimeout>;
