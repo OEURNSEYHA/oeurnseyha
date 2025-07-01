@@ -1,6 +1,5 @@
 import React from "react";
 import { Card, CardContent } from "../components/CardProps";
-
 import { Link } from "react-router-dom";
 import { Button } from "../components/Button";
 import workflow from "../Image/gafrana.drawio.svg";

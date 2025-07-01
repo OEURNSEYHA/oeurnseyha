@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import myPhoto from "../Image/image.png";
 import photo2 from "../Image/DSC_34133.jpg";
+import pdf from "../Image/e5e78a1f-d4b8-4631-b53e-a3ec3ec26beb_K3s_Setup_and_Manage_Cluster.pdf";
 
 import { isMobile } from "react-device-detect";
 import { motion } from "framer-motion";
@@ -21,7 +22,7 @@ const Home: React.FC = () => {
   const [currentText, setCurrentText] = useState("");
   const [index, setIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-
+  const [showPdf, setShowPdf] = useState(false);
   useEffect(() => {
     const fullText = roles[index];
     let timer: ReturnType<typeof setTimeout>;
@@ -468,6 +469,11 @@ const Home: React.FC = () => {
                       How to install jenkin on server and add modern plugin
                     </Link>
                   </li>
+                  <li>
+                    <Link to={"/articles/how-to-setup-k3s"}>
+                      How to setup k3s and manage cluster and mamage docker with portainer
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -573,7 +579,7 @@ const Home: React.FC = () => {
                 K3s
               </div>
               <div className=" uppercase border border-gray-300  bg-gray-400 focus:ring-4 rounded-full  px-5 py-2.5 mr-2 mb-2 text-white">
-                OBSERVATION 
+                OBSERVATION
               </div>
               <div className=" uppercase border border-gray-300  bg-gray-400 focus:ring-4 rounded-full  px-5 py-2.5 mr-2 mb-2 text-white">
                 MONITORING
