@@ -128,6 +128,11 @@ sudo systemctl start jenkins`}
            <p>
             5. Modern plugin: Blue Ocean, Pipeline Stage View, Pipeline Graph View, Pipeline Steps, GitHub Branch Source / GitLab Plugin,Docker Pipeline,Kubernetes Plugin
           </p>
+          <p>
+            6. Create Web Hook or Allow jenkin get code for private Repository 
+            - Go to <b> https://github.com/settings/tokens </b> and create new classic token
+            - And than Go to <b> https://github.com/Username/repo/settings/hooks</b> create new web hook and past <b>ip:8080/webhooks</b>
+          </p>
         </CardContent>
       </Card>
 
