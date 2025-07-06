@@ -17,7 +17,7 @@ import { Link } from "react-router-dom";
 //   seyha7,
 //   seyha8,
 // ];
-const roles: string[] = ["Web Developer", "API Engineer", "QA Engineer"];
+const roles: string[] = ["Web Developer", "API Engineer", "QA Engineer", "DevOps Engineer"];
 const Home: React.FC = () => {
   const [currentText, setCurrentText] = useState("");
   const [index, setIndex] = useState(0);
