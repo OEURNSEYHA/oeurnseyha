@@ -6,6 +6,7 @@ import photo2 from "../Image/DSC_34133.jpg";
 import { isMobile } from "react-device-detect";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import CertificateSection from "../components/CertificateSection";
 
 // const myPhotos: string[] = [
 //   seyha1,
@@ -479,6 +480,8 @@ const Home: React.FC = () => {
           </div>
         </div>
       </section>
+{/* certificate */}
+<CertificateSection/>
       {/*  skill section */}
       <div
         className="mt-20 mb-5  w-[100%] xl:w-[1200px] m-auto font-heading"
