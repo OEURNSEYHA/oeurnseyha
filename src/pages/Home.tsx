@@ -470,7 +470,7 @@ const Home: React.FC = () => {
                   </li>
                   <li>
                     <Link to={"/articles/how-to-setup-k3s"}>
-                      How to setup k3s and manage cluster and mamage docker with portainer
+                      How to setup k3s and manage cluster and mamage docker with portainer and headlamp
                     </Link>
                   </li>
                 </ul>
