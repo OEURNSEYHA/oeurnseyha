@@ -151,15 +151,15 @@ const Home: React.FC = () => {
                 <p>
                   <span className="font-semibold">Website:</span>{" "}
                   <a
-                    href="https://seyhaoeurn.pages.dev"
+                    href="https://oeurnseyha.pages.dev/"
                     target="blank"
-                    className="text-blue-500"
+                    className="text-blue-500 "
                   >
-                    https://seyhaoeurn.pages.dev
+                    https://oeurnseyha.pages.dev/
                   </a>
                 </p>
                 <p>
-                  <span className="font-semibold">Phone:</span> 017431324
+                  <span className="font-semibold ">Phone:</span> <span className="blur-sm"> +85512345678 </span> 
                 </p>
                 <p>
                   <span className="font-semibold">City:</span> Phnom Penh
@@ -167,15 +167,15 @@ const Home: React.FC = () => {
               </div>
               <div className=" flex flex-col justify-start items-start gap-3 ">
                 <p>
-                  <span className="font-semibold">Age:</span> 22
+                  <span className="font-semibold">Age:</span> 24
                 </p>
                 <p>
                   <span className="font-semibold">Degree:</span> Bachelor Degree
                 </p>
                 <p>
                   <span className="font-semibold">Email:</span>{" "}
-                  <a href="mailto:email@example.com" className="text-blue-500">
-                    seyhaoeurn.dev@gmail.com
+                  <a href="mailto:email@example.com" className="text-blue-500 blur-sm">
+                    example@gmail.com
                   </a>
                 </p>
                 <p>
@@ -231,18 +231,28 @@ const Home: React.FC = () => {
                   scalable web applications using modern technologies.
                 </p>
                 <ul className="mt-3 text-gray-700 p-0 flex flex-col items-start gap-2">
-                  <li>📍 Location: Phnom Penh</li>
-                  <li>📞 Phone: 017431324</li>
-                  <li>
-                    📧 Email:{" "}
-                    <a
-                      href="mailto:email@example.com"
-                      className="text-blue-500"
-                    >
-                      seyhaoeurn.dev@gmail.com
-                    </a>{" "}
-                  </li>
-                </ul>
+  <li className="flex items-center gap-2">
+    <span>📍 Location:</span>
+    <span className="font-medium">Phnom Penh</span>
+  </li>
+  
+  <li className="flex items-center gap-2">
+    <span>📞 Phone:</span>
+    <span className="blur-sm transition-all duration-300 cursor-pointer select-none">
+      +855 12 345 678
+    </span>
+  </li>
+  
+  <li className="flex items-center gap-2">
+    <span>📧 Email:</span>
+    <a
+      href="mailto:email@example.com"
+      className="blur-sm transition-all duration-300 cursor-pointer text-blue-500"
+    >
+      email@example.com
+    </a>
+  </li>
+</ul>
               </div>
             </div>
 
