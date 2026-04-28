@@ -1,13 +1,12 @@
-# 👋 Hi, I'm Seyha
+![image](banner.png)
 
-🚀 **Software Engineer | QA Automation | Backend & System Design**
+---
 
 I build scalable, production-ready applications with a strong focus on **quality, performance, and clean architecture**.
 
 ---
 
 ## 🧠 About Me
-
 - 💻 Focused on **Full-Stack Development & QA Automation**
 - ⚙️ Experienced in **ReactJS, NextJS, Typescript, springboot, NodeJs**
 - 🧪 Strong in **Test Automation (Karate Framewrok, Appium, Roobot, Katalon, K6, Jmeter, WebDriverIO Playwright, API Testing, CI/CD)**
